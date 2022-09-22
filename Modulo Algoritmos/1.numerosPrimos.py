@@ -3,15 +3,15 @@
 # Por ejemplo: 25 no es primo, ya que 25 es divisible entre 5, sin embargo, 17 si es primo.
 
 numero = int(input("Ingrese un número a evaluar: "))
-cont = 0
+contador = 0
 print()
 print("{0} es divisible por".format(numero), end=": ")
 for n in range(1, numero+1):
   if numero % n == 0:
     print(n, end=" - ")
-    cont += 1
+    contador += 1
 print("Fin")
-if cont == 2:
-  print("El número ingresado si es primo, tiene {0} divisores".format(cont))
+if contador == 2:
+  print("El número ingresado si es primo, tiene {0} divisores".format(contador))
 else:
-  print("El número ingresado no es primo, tiene {0} divisores".format(cont))
+  print("El número ingresado no es primo, tiene {0} divisores".format(contador))
